@@ -79,3 +79,48 @@ a:hover{ opacity: .9; }
   .aion-cards{ grid-template-columns: 1fr; }
   .aion-hero h1{ font-size: 32px; }
 }
+
+/* ===== Dropdown nav for People ===== */
+.site-nav .trigger { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+
+.dropdown { position: relative; display: inline-block; }
+.dropdown-toggle { cursor: pointer; }
+
+.dropdown-menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  padding: 8px;
+  border-radius: 14px;
+  background: rgba(11,16,32,.92);
+  border: 1px solid var(--aion-border);
+  box-shadow: 0 14px 30px rgba(0,0,0,.35);
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-item{
+  display: block;
+  padding: 9px 10px;
+  border-radius: 10px;
+  color: #e8eefc !important;
+  text-decoration: none !important;
+}
+
+.dropdown-item:hover{
+  background: rgba(255,255,255,.06);
+  color: var(--aion-accent) !important;
+}
+
+.dropdown:hover .dropdown-menu{ display: block; }
+
+/* Mobile: keep dropdown visible when menu is opened */
+@media (max-width: 600px){
+  .site-nav .trigger { display:block; }
+  .dropdown-menu{
+    position: static;
+    display: block;
+    margin-top: 6px;
+  }
+}
