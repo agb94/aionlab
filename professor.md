@@ -59,14 +59,14 @@ Post-Doc Researcher, KAIST (IMPACT Lab)
 ## Education
 
 **Ph.D., Electrical Engineering**  
-KAIST, School of EE 
+KAIST
 Specialization: Analog / Mixed-Signal Integrated Circuits  
 
 **M.S., Electrical Engineering**  
-KAIST, School of EE 
+KAIST
 
 **B.S., Electrical Engineering**  
-KAIST, School of EE 
+KAIST
 Minor: Business Management
 ---
 
