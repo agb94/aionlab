@@ -3,7 +3,7 @@
 
 @import "minima";
 
-/* ===== Global polish ===== */
+/* ===== AION theme ===== */
 :root{
   --aion-accent: #22d3ee;
   --aion-dark: #0b1020;
@@ -15,6 +15,7 @@
   background: rgba(11,16,32,.85);
   backdrop-filter: blur(10px);
 }
+
 .site-title,
 .site-nav .page-link{
   color: #e8eefc !important;
@@ -25,6 +26,7 @@
 }
 
 .wrapper{ max-width: 1050px; }
+
 .page-content{
   background: linear-gradient(180deg, var(--aion-dark), #070a10);
   color: #e8eefc;
@@ -34,56 +36,57 @@
 .page-content li{ color: rgba(232,238,252,.85); }
 a{ color: var(--aion-accent); }
 
-/* ===== People dropdown: desktop hover only, mobile show when hamburger opened ===== */
-.dropdown{
-  position: relative;
-  display: inline-block;
-}
-.dropdown-toggle{ cursor: pointer; }
-
-/* 핵심: 기본은 무조건 숨김 */
-.dropdown-menu{
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 180px;
-  padding: 8px;
-  border-radius: 12px;
-  background: rgba(11,16,32,.95);
-  border: 1px solid var(--aion-border);
-  box-shadow: 0 14px 30px rgba(0,0,0,.35);
-  display: none;
-  z-index: 999;
+/* ===== People dropdown (Desktop: hover only) ===== */
+.site-nav .trigger .dropdown{
+  position: relative !important;
+  display: inline-block !important;
 }
 
-/* 데스크탑: hover/focus 때만 보이기 */
-.dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu{
-  display: block;
+/* 핵심: 기본은 무조건 숨김 (우선순위 강제) */
+.site-nav .trigger .dropdown .dropdown-menu{
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  min-width: 180px !important;
+  padding: 8px !important;
+  border-radius: 12px !important;
+  background: rgba(11,16,32,.95) !important;
+  border: 1px solid var(--aion-border) !important;
+  box-shadow: 0 14px 30px rgba(0,0,0,.35) !important;
+  display: none !important;
+  z-index: 999 !important;
 }
 
-.dropdown-item{
-  display: block;
-  padding: 9px 12px;
-  border-radius: 8px;
+/* 데스크탑 hover/focus 때만 보이기 */
+.site-nav .trigger .dropdown:hover .dropdown-menu,
+.site-nav .trigger .dropdown:focus-within .dropdown-menu{
+  display: block !important;
+}
+
+.site-nav .trigger .dropdown .dropdown-item{
+  display: block !important;
+  padding: 9px 12px !important;
+  border-radius: 8px !important;
   color: #e8eefc !important;
   text-decoration: none !important;
 }
-.dropdown-item:hover{
-  background: rgba(255,255,255,.08);
+.site-nav .trigger .dropdown .dropdown-item:hover{
+  background: rgba(255,255,255,.08) !important;
   color: var(--aion-accent) !important;
 }
 
-/* 모바일: 메뉴(햄버거) 열렸을 때만 보이게 (안 그러면 상단이 지저분해짐) */
+/* ===== Mobile: show submenu (always) =====
+   요청대로 모바일에서는 두 항목이 보이게.
+   단, 드롭다운이 화면 밖으로 튀지 않게 static으로.
+*/
 @media (max-width: 768px){
-  .dropdown{ display: block; }
-  .dropdown-menu{
-    position: static;
-    margin-top: 6px;
-    box-shadow: none;
-    border-radius: 10px;
+  .site-nav .trigger .dropdown{
+    display: block !important;
   }
-  .nav-trigger:checked ~ .trigger .dropdown .dropdown-menu{
-    display: block;
+  .site-nav .trigger .dropdown .dropdown-menu{
+    position: static !important;
+    box-shadow: none !important;
+    margin-top: 6px !important;
+    display: block !important; /* 모바일은 항상 보이게 */
   }
 }
