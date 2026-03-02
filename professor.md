@@ -11,6 +11,7 @@ permalink: /people/professor/
 <div style="flex:1; min-width:250px;">
 
 # Yoontae Jung  
+
 Assistant Professor  
 Kyung Hee University (KHU)  
 
