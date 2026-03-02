@@ -3,7 +3,7 @@ layout: page
 title: Research
 ---
 
-AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, physical AI sensor ICs, and process-in-memory**. :contentReference[oaicite:1]{index=1}
+AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, physical AI sensor ICs, and process-in-memory**.
 
 ## 1) Neural Interface System IC
 - High-density multi-channel neural recording ICs for next-generation neurotechnology
