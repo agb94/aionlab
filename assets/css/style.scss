@@ -4,7 +4,6 @@
 @import "minima";
 
 /* ===== Global Dark Theme Polish ===== */
-
 :root{
   --aion-accent: #22d3ee;
   --aion-dark: #0b1020;
@@ -27,9 +26,7 @@
   text-decoration: none;
 }
 
-.wrapper{
-  max-width: 1050px;
-}
+.wrapper{ max-width: 1050px; }
 
 .page-content{
   background: linear-gradient(180deg, var(--aion-dark), #070a10);
@@ -42,43 +39,47 @@
   color: rgba(232,238,252,.85);
 }
 
-a{
-  color: var(--aion-accent);
-}
+a{ color: var(--aion-accent); }
 
-/* ===== People Dropdown (Desktop: hover only / Mobile: show only when menu opened) ===== */
+/* ===== People Dropdown (Desktop: hover only / Mobile: always visible) ===== */
+/* 핵심: desktop에서는 무조건 숨김 -> hover/focus 때만 표시 */
+/* minima 스타일이 이겨버리는 경우가 있어서 specificity + !important로 강제 */
 
-.dropdown{
+.site-nav .trigger .dropdown{
   position: relative;
   display: inline-block;
 }
 
-.dropdown-toggle{
+.site-nav .trigger .dropdown .dropdown-toggle{
   cursor: pointer;
 }
 
-/* Default: hidden everywhere */
-.dropdown-menu{
+/* Desktop default hidden */
+.site-nav .trigger .dropdown .dropdown-menu{
   position: absolute;
   top: 100%;
   left: 0;
+
   min-width: 180px;
   padding: 8px;
+  margin-top: 6px;
+
   border-radius: 12px;
   background: rgba(11,16,32,.95);
   border: 1px solid var(--aion-border);
   box-shadow: 0 14px 30px rgba(0,0,0,.35);
-  display: none;              /* 핵심: 기본은 무조건 숨김 */
+
+  display: none !important;   /* <-- 강제 숨김 */
   z-index: 999;
 }
 
-/* Desktop: show on hover/focus */
-.dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu{
-  display: block;
+/* Show on hover/focus (desktop) */
+.site-nav .trigger .dropdown:hover .dropdown-menu,
+.site-nav .trigger .dropdown:focus-within .dropdown-menu{
+  display: block !important;  /* <-- 강제 표시 */
 }
 
-.dropdown-item{
+.site-nav .trigger .dropdown .dropdown-item{
   display: block;
   padding: 9px 12px;
   border-radius: 8px;
@@ -86,25 +87,21 @@ a{
   text-decoration: none !important;
 }
 
-.dropdown-item:hover{
+.site-nav .trigger .dropdown .dropdown-item:hover{
   background: rgba(255,255,255,.08);
   color: var(--aion-accent) !important;
 }
 
-/* Mobile: only show submenu when hamburger menu is opened */
+/* Mobile: always visible (요청대로) */
 @media (max-width: 768px){
-  .dropdown{
+  .site-nav .trigger .dropdown{
     display: block;
-  }
-  .dropdown-menu{
-    position: static;
-    box-shadow: none;
-    margin-top: 6px;
-    border-radius: 10px;
   }
 
-  /* ONLY when top-right menu is opened */
-  .nav-trigger:checked ~ .trigger .dropdown .dropdown-menu{
-    display: block;
+  .site-nav .trigger .dropdown .dropdown-menu{
+    position: static;
+    box-shadow: none;
+    display: block !important; /* <-- 모바일은 항상 표시 */
+    margin-top: 6px;
   }
 }
