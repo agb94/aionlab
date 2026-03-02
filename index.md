@@ -38,7 +38,6 @@ title: Home
         <li>Recruiting PhD/MS students (Analog/Mixed-Signal, Neural Interface, CIM/PIM)</li>
         <li>Add: grants, talks, and lab updates</li>
       </ul>
-      <p class="small">Tip: 여기 뉴스는 3~5개만 짧게 유지하면 깔끔해.</p>
     </div>
   </div>
 </div>
