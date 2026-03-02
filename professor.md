@@ -15,13 +15,12 @@ permalink: /people/professor/
     <p style="margin:0 0 10px;">
       Assistant Professor<br/>
       Kyung Hee University (KHU)<br/>
-      <span class="small">Director, AION Lab — AI-On-Chip Neuro-Intelligent Circuits Laboratory</span>
+      <span class="small">Principal Investigator, AION Lab — AI-On-Chip Neuro-Intelligent Circuits Laboratory</span>
     </p>
 
     <p style="margin:0 0 10px;">
       <b>Email:</b> <a href="mailto:yoontaejake.jung@khu.ac.kr">yoontaejake.jung@khu.ac.kr</a><br/>
       <b>Google Scholar:</b> <a href="https://scholar.google.co.kr/citations?user=oYBU_jkAAAAJ&hl=en" target="_blank" rel="noopener">Profile</a><br/>
-      <b>GitHub:</b> <a href="https://github.com/yuntae1000" target="_blank" rel="noopener">yuntae1000</a>
     </p>
 
     <p style="margin:0;">
@@ -72,6 +71,7 @@ KAIST
 **B.S., Electrical Engineering**  
 KAIST
 Minor: Business Management
+
 ---
 
 ## Awards & Honors
