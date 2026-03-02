@@ -10,13 +10,13 @@ AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, phys
 - Artifact-tolerant, wide-dynamic-range front-ends for closed-loop interfaces
 - Recording/stimulation/closed-loop circuit architectures 
 
-## 2) Data Converters for Bio/Sensor Readout
-- ΔΣ ADC (CT/DT hybrid), NS-SAR, time-based readout architectures
-- Dynamic-range enhancement and noise-shaping techniques for robust acquisition 
-
-## 3) Physical AI Sensor Interface IC
+## 2) Sensor Interface ICs for Physical AI 
 - Multimodal wireless biosignal sensor interfaces for wearable robotics
 - Ultra-low-power sensing SoCs and interference-tolerant acquisition circuits 
+
+## 3) Data Converters for Bio/Sensor Readout
+- ΔΣ ADC (CT/DT hybrid), NS-SAR, time-based readout architectures
+- Dynamic-range enhancement and noise-shaping techniques for robust acquisition 
 
 ## 4) Process-in-Memory / Compute-in-Memory
 - Energy-efficient mixed-signal PIM/CIM direction for edge intelligence
