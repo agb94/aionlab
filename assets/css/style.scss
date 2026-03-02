@@ -80,11 +80,15 @@ a:hover{ opacity: .9; }
   .aion-hero h1{ font-size: 32px; }
 }
 
-/* ===== Dropdown nav for People ===== */
-.site-nav .trigger { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
-
+/* ===== Click-to-open dropdown (People) ===== */
 .dropdown { position: relative; display: inline-block; }
-.dropdown-toggle { cursor: pointer; }
+
+.dropdown-trigger { display: none; }  /* checkbox hidden */
+
+.dropdown-toggle {
+  cursor: pointer;
+  user-select: none;
+}
 
 .dropdown-menu{
   position: absolute;
@@ -100,6 +104,11 @@ a:hover{ opacity: .9; }
   z-index: 999;
 }
 
+/* ONLY show when People is clicked */
+.dropdown-trigger:checked ~ .dropdown-menu {
+  display: block;
+}
+
 .dropdown-item{
   display: block;
   padding: 9px 10px;
@@ -107,20 +116,15 @@ a:hover{ opacity: .9; }
   color: #e8eefc !important;
   text-decoration: none !important;
 }
-
 .dropdown-item:hover{
   background: rgba(255,255,255,.06);
   color: var(--aion-accent) !important;
 }
 
-.dropdown:hover .dropdown-menu{ display: block; }
-
-/* Mobile: keep dropdown visible when menu is opened */
+/* Mobile: keep it relative so it doesn't overflow weirdly */
 @media (max-width: 600px){
-  .site-nav .trigger { display:block; }
   .dropdown-menu{
     position: static;
-    display: block;
     margin-top: 6px;
   }
 }
