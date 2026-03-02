@@ -20,7 +20,9 @@
 
         <!-- People dropdown -->
         <div class="dropdown">
-          <a class="page-link dropdown-toggle" href="{{ '/people' | relative_url }}">People ▾</a>
+          <input type="checkbox" id="people-trigger" class="dropdown-trigger" />
+          <label for="people-trigger" class="page-link dropdown-toggle">People ▾</label>
+        
           <div class="dropdown-menu">
             <a class="dropdown-item" href="{{ '/people/professor/' | relative_url }}">Professor</a>
             <a class="dropdown-item" href="{{ '/people/students/' | relative_url }}">Students</a>
