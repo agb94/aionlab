@@ -46,7 +46,7 @@ a{
   color: var(--aion-accent);
 }
 
-/* ===== People Dropdown (Desktop Hover / Mobile Always Show) ===== */
+/* ===== People Dropdown (Desktop: hover only / Mobile: show only when menu opened) ===== */
 
 .dropdown{
   position: relative;
@@ -57,6 +57,7 @@ a{
   cursor: pointer;
 }
 
+/* Default: hidden everywhere */
 .dropdown-menu{
   position: absolute;
   top: 100%;
@@ -67,11 +68,11 @@ a{
   background: rgba(11,16,32,.95);
   border: 1px solid var(--aion-border);
   box-shadow: 0 14px 30px rgba(0,0,0,.35);
-  display: none;   /* 기본 숨김 */
+  display: none;              /* 핵심: 기본은 무조건 숨김 */
   z-index: 999;
 }
 
-/* Desktop hover */
+/* Desktop: show on hover/focus */
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu{
   display: block;
@@ -90,19 +91,20 @@ a{
   color: var(--aion-accent) !important;
 }
 
-/* ===== Mobile ===== */
-
+/* Mobile: only show submenu when hamburger menu is opened */
 @media (max-width: 768px){
-
   .dropdown{
     display: block;
   }
-
   .dropdown-menu{
     position: static;
-    display: block;   /* 모바일에서는 항상 보이게 */
     box-shadow: none;
     margin-top: 6px;
+    border-radius: 10px;
   }
 
+  /* ONLY when top-right menu is opened */
+  .nav-trigger:checked ~ .trigger .dropdown .dropdown-menu{
+    display: block;
+  }
 }
