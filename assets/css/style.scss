@@ -104,8 +104,28 @@ a:hover{ opacity: .9; }
   z-index: 999;
 }
 
-/* ONLY show when People is clicked */
-.dropdown-trigger:checked ~ .dropdown-menu {
+/* ===== People dropdown: hover on desktop, always visible on mobile ===== */
+.dropdown { position: relative; display: inline-block; }
+.dropdown-toggle { cursor: pointer; user-select: none; }
+
+/* Desktop default: hidden */
+.dropdown-menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  padding: 8px;
+  border-radius: 14px;
+  background: rgba(11,16,32,.92);
+  border: 1px solid var(--aion-border);
+  box-shadow: 0 14px 30px rgba(0,0,0,.35);
+  display: none;              /* 핵심: 기본은 숨김 */
+  z-index: 999;
+}
+
+/* Show on hover (desktop) + keyboard focus */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu{
   display: block;
 }
 
@@ -121,10 +141,13 @@ a:hover{ opacity: .9; }
   color: var(--aion-accent) !important;
 }
 
-/* Mobile: keep it relative so it doesn't overflow weirdly */
-@media (max-width: 600px){
+/* Mobile: show submenu always */
+@media (max-width: 768px){
+  .dropdown { display: block; }
   .dropdown-menu{
     position: static;
+    display: block;            /* 모바일은 항상 보이게 */
     margin-top: 6px;
+    box-shadow: none;
   }
 }
