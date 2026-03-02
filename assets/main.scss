@@ -10,41 +10,57 @@
   --aion-border: rgba(255,255,255,.12);
 }
 
-/* ===========================
-   1️⃣ GLOBAL BACKGROUND RESET
-   =========================== */
+/* ==================================
+   1) BODY + CONTENT = WHITE (ALL PAGES)
+   ================================== */
 
-html, body {
+/* 전체 배경은 흰색 */
+html, body{
   background: #ffffff !important;
   color: #111111 !important;
 }
 
-/* 모든 페이지 wrapper 강제 화이트 */
-.page-content,
-.post-content,
-.wrapper {
+/* 본문 영역만 흰색으로 강제 (header 제외) */
+.page-content{
+  background: #ffffff !important;
+  color: #111111 !important;
+  min-height: 70vh;
+}
+
+/* Minima가 글 본문에 쓰는 영역 */
+.page-content .post-content,
+.page-content .page-content{
   background: #ffffff !important;
   color: #111111 !important;
 }
 
-/* 본문 텍스트 */
+/* 텍스트 컬러 */
 .page-content p,
-.post-content p,
-.page-content li,
-.post-content li {
+.page-content li{
   color: #333333 !important;
 }
 
-/* ===========================
-   2️⃣ TOP NAVIGATION (Dark Only Here)
-   =========================== */
+/* 링크 색 */
+a{
+  color: var(--aion-accent);
+}
+
+/* ==================================
+   2) TOP NAV BAR = DARK ONLY
+   ================================== */
 
 .site-header{
   border-top: 0;
-  background: #0b1020;
+  background: var(--aion-dark) !important; /* 헤더 배경 다크 고정 */
   backdrop-filter: blur(10px);
 }
 
+/* 헤더 안 wrapper가 흰색으로 덮이지 않게 */
+.site-header .wrapper{
+  background: transparent !important;
+}
+
+/* 메뉴 글자 */
 .site-title,
 .site-nav .page-link{
   color: #ffffff !important;
@@ -55,9 +71,9 @@ html, body {
   text-decoration: none;
 }
 
-/* ===========================
-   3️⃣ PEOPLE DROPDOWN
-   =========================== */
+/* ==================================
+   3) PEOPLE DROPDOWN (DESKTOP HOVER)
+   ================================== */
 
 .site-nav .trigger .dropdown{
   position: relative;
@@ -72,7 +88,7 @@ html, body {
   min-width: 180px;
   padding: 8px;
   border-radius: 12px;
-  background: #0b1020;
+  background: var(--aion-dark);
   border: 1px solid var(--aion-border);
   box-shadow: 0 14px 30px rgba(0,0,0,.35);
   display: none;
@@ -98,21 +114,18 @@ html, body {
   color: var(--aion-accent) !important;
 }
 
-/* ===========================
-   4️⃣ MOBILE
-   =========================== */
+/* ==================================
+   4) MOBILE: submenu always visible
+   ================================== */
 
 @media (max-width: 768px){
-
   .site-nav .trigger .dropdown{
     display: block;
   }
-
   .site-nav .trigger .dropdown .dropdown-menu{
     position: static;
-    box-shadow: none;
     margin-top: 6px;
+    box-shadow: none;
     display: block; /* 모바일은 항상 보이게 */
   }
-
 }
