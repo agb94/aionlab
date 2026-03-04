@@ -35,7 +35,7 @@ permalink: /people/professor/
 
 ## Biography
 
-Yoontae Jung is an Assistant Professor at Kyung Hee University and the Director of AION Lab.  
+Yoontae Jung is an Assistant Professor at Kyung Hee University and the PI of AION Lab.  
 His research focuses on AI-optimized analog and mixed-signal integrated circuits that bridge real-world sensing with on-chip intelligence.
 
 His work spans neural interface system ICs, high-dynamic-range data converters, ultra-low-power sensor front-ends, and mixed-signal compute-in-memory architectures. He aims to integrate rigorous circuit-level methodologies with scalable AI semiconductor platforms.
@@ -97,7 +97,7 @@ Minor: Business Management
 
 ## Research Vision
 
-AION Lab seeks to advance the frontier of AI semiconductor platforms by combining:
+AION Lab seeks to advance the frontier of Analog/Mixed and AI Chip platforms by combining:
 
 - Deep analog circuit fundamentals  
 - Robust mixed-signal architectures  
