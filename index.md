@@ -12,7 +12,9 @@ title: Home
 <div class="aion-hero">
   <div class="aion-grid">
     <div>
-      <h1>AION Lab — Analog Intelligence On-Chip Neural Circuits</h1>
+      <h1>  AION Lab <br>
+  <span>Analog Intelligence On-Chip Neural Circuits</span>
+      </h1>
       <p class="aion-sub">
         AION Lab at <b>Kyung Hee University (KHU)</b> develops <b>AI-optimized analog/mixed-signal ICs</b> and
         <b>neural interface system ICs</b> for real-world sensing and on-chip intelligence.
