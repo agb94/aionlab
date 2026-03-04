@@ -2,6 +2,12 @@
 layout: page
 title: Home
 ---
+<div style="text-align:center; margin-top:30px; margin-bottom:30px;">
+  <img src="{{ '/assets/images/aionlab_logo.png' | relative_url }}" 
+       alt="AION Lab Logo"
+       style="width:220px;">
+</div>
+
 
 <div class="aion-hero">
   <div class="aion-grid">
