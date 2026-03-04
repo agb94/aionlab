@@ -15,7 +15,7 @@ permalink: /people/professor/
     <p style="margin:0 0 10px;">
       Assistant Professor<br/>
       Kyung Hee University (KHU)<br/>
-      <span class="small">Principal Investigator, AION Lab — AI-On-Chip Neuro-Intelligent Circuits Laboratory</span>
+      <span class="small">Principal Investigator, AION Lab </span>
     </p>
 
     <p style="margin:0 0 10px;">
