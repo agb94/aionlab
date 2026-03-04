@@ -56,8 +56,5 @@ yoontaejake.jung@khu.ac.kr
 
 </div>
 
----
 
-## Alumni
 
-(To be updated)
