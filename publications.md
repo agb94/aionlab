@@ -16,7 +16,6 @@ title: Publications
 
 ---
 ## Selected Publications
----
 
 ## Journals
 
