@@ -77,7 +77,7 @@ Minor: Business Management
 ## Awards & Honors
 
 - **IEEE Solid-State Circuits Society (SSCS) Pre-Doctoral Achievement Award 23-24**  
-- **IEEE Circuits and Systems Society (CASS) Travel Grant**  
+- **KAIST Best Research Acheivement Award (Kim Choong-Ki Award) 2023**  
 - **National Government-Funded Graduate Fellowship (Full Scholarship Support)**  
 
 ---
