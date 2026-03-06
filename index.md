@@ -13,7 +13,7 @@ title: Home
   <div class="aion-grid">
     <div>
       <h1>  AION Lab <br>
-  <span>Analog Intelligence On-Chip Neural Circuits</span>
+  <span>Analog Intelligence On-Chip Neurocircuit Lab</span>
       </h1>
       <p class="aion-sub">
         AION Lab at <b>Kyung Hee University (KHU)</b> develops <b>AI-optimized analog/mixed-signal ICs</b> and
@@ -67,5 +67,5 @@ title: Home
 </div>
 
 ## Open Positions
-We are looking for motivated PhD/MS students with interest in **analog/mixed-signal IC design, PIM, various circuit areas**.
-Please email your CV and brief research interests to <a href="mailto:yoontaejake.jung@khu.ac.kr">yoontaejake.jung@khu.ac.kr</a>.
+We are looking for motivated Undergraduate, PhD/MS students with interest in **analog/mixed-signal IC design, PIM, various circuit areas**.
+Please email with brief research interests to <a href="mailto:yoontaejake.jung@khu.ac.kr">yoontaejake.jung@khu.ac.kr</a>.
