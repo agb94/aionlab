@@ -91,7 +91,7 @@ Minor: Business Management
 - IEEE Journal of Solid-State Circuits (JSSC)  
 - IEEE Transactions on Circuits and Systems I, II (TCAS-I, II)  
 - IEEE Transactions on Biomedical Circuits and Systems (TBioCAS)  
-- IEEE Access and etc.
+- IEEE Sensors, IEEE Open Journal of Circuits and Systems (OJCAS), and etc.
 
 ---
 
