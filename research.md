@@ -3,17 +3,18 @@ layout: page
 title: Research
 ---
 
-AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, physical AI sensor ICs, and process-in-memory**.
+<p>
+  AION Lab focuses on <strong>analog/mixed-signal ICs, neural interface system ICs, physical AI sensor ICs, and process-in-memory</strong>.
+</p>
 
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin:32px 0;">
-  <div style="flex:1; min-width:280px;" markdown="1">
-
-## 1) Neural Interface System IC
-
-- High-density multi-channel neural recording ICs for next-generation neurotechnology
-- Artifact-tolerant, wide-dynamic-range front-ends for closed-loop interfaces
-- Recording/stimulation/closed-loop circuit architectures
-
+  <div style="flex:1; min-width:280px;">
+    <h2>1) Neural Interface System IC</h2>
+    <ul>
+      <li>High-density multi-channel neural recording ICs for next-generation neurotechnology</li>
+      <li>Artifact-tolerant, wide-dynamic-range front-ends for closed-loop interfaces</li>
+      <li>Recording/stimulation/closed-loop circuit architectures</li>
+    </ul>
   </div>
 
   <div style="flex:1; min-width:280px; text-align:center;">
@@ -23,15 +24,13 @@ AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, phys
   </div>
 </div>
 
-
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin:32px 0;">
-  <div style="flex:1; min-width:280px;" markdown="1">
-
-## 2) Sensor Interface ICs for Physical AI
-
-- Multimodal wireless biosignal sensor interfaces for wearable robotics
-- Ultra-low-power sensing SoCs and interference-tolerant acquisition circuits
-
+  <div style="flex:1; min-width:280px;">
+    <h2>2) Sensor Interface ICs for Physical AI</h2>
+    <ul>
+      <li>Multimodal wireless biosignal sensor interfaces for wearable robotics</li>
+      <li>Ultra-low-power sensing SoCs and interference-tolerant acquisition circuits</li>
+    </ul>
   </div>
 
   <div style="flex:1; min-width:280px; text-align:center;">
@@ -42,13 +41,12 @@ AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, phys
 </div>
 
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin:32px 0;">
-  <div style="flex:1; min-width:280px;" markdown="1">
-
-## 3) Data Converters for Bio/Sensor Readout
-
-- ΔΣ ADC (CT/DT hybrid), NS-SAR, time-based readout architectures
-- Dynamic-range enhancement and noise-shaping techniques for robust acquisition
-
+  <div style="flex:1; min-width:280px;">
+    <h2>3) Data Converters for Bio/Sensor Readout</h2>
+    <ul>
+      <li>ΔΣ ADC (CT/DT hybrid), NS-SAR, time-based readout architectures</li>
+      <li>Dynamic-range enhancement and noise-shaping techniques for robust acquisition</li>
+    </ul>
   </div>
 
   <div style="flex:1; min-width:280px; text-align:center;">
@@ -59,13 +57,12 @@ AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, phys
 </div>
 
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin:32px 0;">
-  <div style="flex:1; min-width:280px;" markdown="1">
-
-## 4) Process-in-Memory / Compute-in-Memory
-
-- Energy-efficient mixed-signal PIM/CIM direction for edge intelligence
-- Co-design of sensing + on-chip intelligence under non-idealities
-
+  <div style="flex:1; min-width:280px;">
+    <h2>4) Process-in-Memory / Compute-in-Memory</h2>
+    <ul>
+      <li>Energy-efficient mixed-signal PIM/CIM direction for edge intelligence</li>
+      <li>Co-design of sensing + on-chip intelligence under non-idealities</li>
+    </ul>
   </div>
 
   <div style="flex:1; min-width:280px; text-align:center;">
@@ -75,8 +72,9 @@ AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, phys
   </div>
 </div>
 
-## Selected Projects
-
-- **imec (2024–2026):** High-density multi-channel neural recording IC (SAR ADC, reference buffer, LDO)
-- **NRF (2020–2024):** Multimodal wireless sensor interface circuits and flexible biosignal sensors (Project lead)
-- **Samsung LSI (2018–2023):** Sub-aF capacitive sensor interface for E-Nose + drift compensation techniques
+<h2>Selected Projects</h2>
+<ul>
+  <li><strong>imec (2024–2026):</strong> High-density multi-channel neural recording IC (SAR ADC, reference buffer, LDO)</li>
+  <li><strong>NRF (2020–2024):</strong> Multimodal wireless sensor interface circuits and flexible biosignal sensors (Project lead)</li>
+  <li><strong>Samsung LSI (2018–2023):</strong> Sub-aF capacitive sensor interface for E-Nose + drift compensation techniques</li>
+</ul>
