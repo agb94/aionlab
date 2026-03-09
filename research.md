@@ -17,10 +17,10 @@ title: Research
     </ul>
   </div>
 
-  <div style="flex:1; min-width:260px; text-align:center;">
+  <div style="flex:1; min-width:280px; text-align:center;">
     <img src="{{ '/assets/images/neural1.png' | relative_url }}"
          alt="Neural Interface System IC"
-         style="max-width:100%; border-radius:12px;">
+         style="max-width:90%; border-radius:12px;">
   </div>
 </div>
 
@@ -52,7 +52,7 @@ title: Research
   <div style="flex:1; min-width:240px; text-align:center;">
     <img src="{{ '/assets/images/dataconverter1.png' | relative_url }}"
          alt="Data Converters for Bio and Sensor Readout"
-         style="max-width:100%; border-radius:12px;">
+         style="max-width:90%; border-radius:12px;">
   </div>
 </div>
 
@@ -68,7 +68,7 @@ title: Research
   <div style="flex:1; min-width:240px; text-align:center;">
     <img src="{{ '/assets/images/pim1.png' | relative_url }}"
          alt="Process-in-Memory and Compute-in-Memory"
-         style="max-width:100%; border-radius:12px;">
+         style="max-width:70%; border-radius:12px;">
   </div>
 </div>
 
