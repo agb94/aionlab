@@ -21,15 +21,7 @@ AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, phys
          alt="Neural Interface System IC"
          style="max-width:100%; border-radius:12px;">
   </div>
-
-
-  </div>
-
-  <div style="flex:1; min-width:280px; text-align:center;">
-    <img src="{{ '/assets/images/neural2.jpg' | relative_url }}"
-         alt="Neural Interface System IC"
-         style="max-width:100%; border-radius:12px;">
-  </div>
+</div>
 
 
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin:32px 0;">
