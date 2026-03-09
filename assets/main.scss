@@ -70,24 +70,12 @@ a{
 }
 
 /* ==================================
-   3) DESKTOP DROPDOWN
+   3) DESKTOP PEOPLE DROPDOWN
    ================================== */
 
 .site-nav .trigger .dropdown{
   position: relative;
   display: inline-block;
-}
-
-/* 체크박스는 항상 숨김 */
-.people-trigger{
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* 데스크탑에서는 화살표 숨김 */
-.dropdown-arrow-label{
-  display: none;
 }
 
 .site-nav .trigger .dropdown .dropdown-menu{
@@ -105,7 +93,6 @@ a{
   margin-top: 6px;
 }
 
-/* People 위치 그대로, 아래로 자연스럽게 펼침 */
 .site-nav .trigger .dropdown:hover .dropdown-menu,
 .site-nav .trigger .dropdown:focus-within .dropdown-menu{
   display: block;
@@ -122,6 +109,11 @@ a{
 .site-nav .trigger .dropdown .dropdown-item:hover{
   background: rgba(255,255,255,.08);
   color: var(--aion-accent) !important;
+}
+
+/* mobile static submenu hidden on desktop */
+.mobile-submenu{
+  display: none;
 }
 
 /* ==================================
@@ -143,14 +135,12 @@ a{
   .site-title,
   .site-nav .page-link,
   .dropdown-link,
-  .dropdown-arrow-label,
   .dropdown-item{
     color: #ffffff !important;
   }
 
   .site-nav .page-link:hover,
   .dropdown-link:hover,
-  .dropdown-arrow-label:hover,
   .dropdown-item:hover{
     color: var(--aion-accent) !important;
     text-decoration: none;
@@ -163,43 +153,24 @@ a{
   .site-nav .trigger .dropdown{
     display: block;
     width: 100%;
-    position: relative;
-  }
-
-  /* 모바일에서는 People + 화살표를 양쪽 정렬 */
-  .dropdown{
-    display: block;
-  }
-
-  .dropdown-link{
-    display: inline-block;
-    width: calc(100% - 24px);
-  }
-
-  .dropdown-arrow-label{
-    display: inline-block;
-    width: 20px;
-    text-align: right;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .site-nav .trigger .dropdown .dropdown-menu{
-    display: none;
     position: static;
-    margin-top: 6px;
-    margin-left: 12px;
-    padding: 4px 0 0 0;
-    box-shadow: none;
-    border: none;
-    background: transparent;
   }
 
-  .people-trigger:checked ~ .dropdown-menu{
+  /* mobile에서는 hover dropdown 숨김 */
+  .site-nav .trigger .dropdown .dropdown-menu{
+    display: none !important;
+  }
+
+  /* mobile에서는 static submenu 표시 */
+  .mobile-submenu{
     display: block;
+    margin-top: 2px;
+    margin-left: 0;
   }
 
-  .site-nav .trigger .dropdown .dropdown-item{
-    padding: 6px 0;
+  .mobile-subitem{
+    display: block;
+    padding: 4px 0 4px 0 !important;
+    color: rgba(255,255,255,.92) !important;
   }
 }
