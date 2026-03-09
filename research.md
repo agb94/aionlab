@@ -7,7 +7,6 @@ title: Research
 AION Lab focuses on <strong>analog/mixed-signal ICs, neural interface system ICs, physical AI sensor ICs, and process-in-memory</strong>.
 </p>
 
-
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin:32px 0;">
 
 <div style="flex:1; min-width:280px;">
@@ -22,16 +21,15 @@ AION Lab focuses on <strong>analog/mixed-signal ICs, neural interface system ICs
 
 </div>
 
-<div style="flex:1; min-width:280px; text-align:center; overflow:hidden;">
+<div style="flex:1; min-width:280px; text-align:center; padding:8px 12px;">
 
 <img src="{{ '/assets/images/neural1.png' | relative_url }}"
      alt="Neural Interface System IC"
-     style="max-width:90%; height:auto; display:block; margin:0 auto; border-radius:12px;">
+     style="width:90%; max-width:420px; height:auto; object-fit:contain; display:block; margin:0 auto; border-radius:12px;">
 
 </div>
 
 </div>
-
 
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin:32px 0;">
 
@@ -46,16 +44,15 @@ AION Lab focuses on <strong>analog/mixed-signal ICs, neural interface system ICs
 
 </div>
 
-<div style="flex:1; min-width:280px; text-align:center; overflow:hidden;">
+<div style="flex:1; min-width:280px; text-align:center; padding:8px 12px;">
 
 <img src="{{ '/assets/images/physical1.png' | relative_url }}"
      alt="Sensor Interface ICs for Physical AI"
-     style="max-width:100%; height:auto; display:block; margin:0 auto; border-radius:12px;">
+     style="width:100%; max-width:420px; height:auto; object-fit:contain; display:block; margin:0 auto; border-radius:12px;">
 
 </div>
 
 </div>
-
 
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin:32px 0;">
 
@@ -70,16 +67,15 @@ AION Lab focuses on <strong>analog/mixed-signal ICs, neural interface system ICs
 
 </div>
 
-<div style="flex:1; min-width:280px; text-align:center; overflow:hidden;">
+<div style="flex:1; min-width:280px; text-align:center; padding:8px 12px;">
 
 <img src="{{ '/assets/images/dataconverter1.png' | relative_url }}"
      alt="Data Converters for Bio and Sensor Readout"
-     style="max-width:90%; height:auto; display:block; margin:0 auto; border-radius:12px;">
+     style="width:90%; max-width:420px; height:auto; object-fit:contain; display:block; margin:0 auto; border-radius:12px;">
 
 </div>
 
 </div>
-
 
 <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin:32px 0;">
 
@@ -94,16 +90,15 @@ AION Lab focuses on <strong>analog/mixed-signal ICs, neural interface system ICs
 
 </div>
 
-<div style="flex:1; min-width:280px; text-align:center; overflow:hidden;">
+<div style="flex:1; min-width:280px; text-align:center; padding:8px 12px;">
 
 <img src="{{ '/assets/images/pim1.png' | relative_url }}"
      alt="Process-in-Memory and Compute-in-Memory"
-     style="max-width:80%; height:auto; display:block; margin:0 auto; border-radius:12px;">
+     style="width:80%; max-width:360px; height:auto; object-fit:contain; display:block; margin:0 auto; border-radius:12px;">
 
 </div>
 
 </div>
-
 
 <h2>Selected Projects</h2>
 
