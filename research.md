@@ -69,7 +69,7 @@ AION Lab focuses on **analog/mixed-signal ICs, neural interface system ICs, phys
   </div>
 
   <div style="flex:1; min-width:280px; text-align:center;">
-    <img src="{{ '/assets/images/pim1.emf' | relative_url }}"
+    <img src="{{ '/assets/images/pim1.png' | relative_url }}"
          alt="Process-in-Memory and Compute-in-Memory"
          style="max-width:100%; border-radius:12px;">
   </div>
