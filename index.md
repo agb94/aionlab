@@ -32,7 +32,7 @@ title:
         </p>
 
         <p class="small">
-          Principal Investigator: <b>Yoontae Jung</b> · College of Electronics & Informations, KHU
+          Principal Investigator: <b>Yoontae Jung</b> · College of Electronics & Information, KHU
         </p>
       </div>
 
